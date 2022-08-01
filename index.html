@@ -16,8 +16,34 @@
         </div>
         <div class="main-content">
             <div class="add-book"> <button class="bk-btn">Add Book</button></div>
-            <div class="book-grid">
-                
+            <form action="javascript:addBookToLibrary();" id="add-book-form" class="add-book-form">
+                    <h3>Add New Book</h3>
+                <div class="book-info">
+                    <label for="title">What Is The Title</label>
+                    <input id= "title" type="text" name="title" placeholder="To Kill A Mockingbird" required>
+                </div>
+
+                <div class="book-info">
+                    <label for="author">Author Of The Book</label>
+                    <input type="text" name="author" id="author" placeholder="Harper Lee" required>
+                </div>
+
+                <div class="book-info">
+                    <label for="num-pages">Number of Pages</label>
+                    <input type="number" name="num-pages" id="num-pages" placeholder="281" min="0" max="10000">
+                </div>
+
+                <div class="have-read">
+                    <span>Have You Read It?</span>
+                    <input type="checkbox" class="checkbox" id="is-read">
+                </div>
+                <div class="sub-button">
+                    <button class="submit-book" type="submit">Submit Book</button>
+                </div>
+
+            </form>
+            <div class="book-grid" id="book-grid">
+
             </div>
         </div>
 

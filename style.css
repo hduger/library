@@ -72,10 +72,84 @@ body {
     color: #ddd6fe;
     border-color: #ddd6fe
  }
+/* Begin Styling Popup Form */
 
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #a78bfa;
+    width: 300px;
+    height: 386px;
+    margin: auto;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    color: #4c1d95;
+}
+
+.add-book-form h3 {
+    text-align: center;
+}
+
+.book-info, .sub-button {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    
+}
+
+.book-info input {
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #efecfa;
+    color: #4c1d95;
+}
+
+.checkbox {
+    accent-color: #4c1d95;
+}
+
+.have-read {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.have-read input {
+    align-items: center;
+
+}
+
+.submit-book {
+    font-size: larger;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4c1d95;
+    color: #efecfa;
+}
+
+.submit-book:hover {
+    border: 2px;
+    outline: auto;
+    outline-style: inset;
+    background-color: #a78bfa;
+    color: #4c1d95;
+    border-width: 2px;
+    border-color: #4c1d95;
+}
+
+ /* End of styling popup form */
  .book-grid {
     display: grid;
  }
+
+
 
 
  /* End of the styling for main content */
