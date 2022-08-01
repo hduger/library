@@ -8,7 +8,7 @@ body {
     padding: 0px;
 
 }
-
+/* Start of Styling for the header */
 .header{
     display: flex;
     background-color: #4c1d95;
@@ -41,13 +41,50 @@ body {
     color: #ddd6fe;
     border-color: #ddd6fe
 }
+/* End of Styling for the header */
 
+
+/* Start of the styling for the main content of the library */
 .main-content {
     background: linear-gradient(0deg,#a78bfa,#4c1d95);
-    height: 100vh;
-
+    height: 85vh;
 }
 
 .main-content .add-book{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
+ .add-book .bk-btn {
+    color: #4c1d95;
+    background-color: #ddd6fe;
+    border-color: #4c1d95;
+    border-width: 3px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 80px;
+ }
+
+ .bk-btn:hover {
+    cursor: pointer;
+    background-color: #4c1d95;
+    color: #ddd6fe;
+    border-color: #ddd6fe
+ }
+
+ .book-grid {
+    display: grid;
+ }
+
+
+ /* End of the styling for main content */
+
+/* Footer Styling */
+ .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a78bfa;
+    color: #e2dcfa;
+ }
