@@ -1,4 +1,15 @@
 
+document.querySelector(".bk-btn").addEventListener("click", function(){
+    document.querySelector(".add-book-form").classList.add("active");
+});
+
+
+document.querySelector(".close-btn").addEventListener("click", function(){
+    document.querySelector(".add-book-form").classList.remove("active");
+});
+
+
+
 let myLibrary = [];
 
 function Book(title, author, numPages, read) {
@@ -20,5 +31,5 @@ function Book(title, author, numPages, read) {
 // console.log(theHobbit.info());
 
 function addBookToLibrary() {
-    
+    document.querySelector(".book-grid").add(FormData)
 }

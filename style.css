@@ -85,6 +85,34 @@ body {
     justify-content: space-evenly;
     border-radius: 8px;
     color: #4c1d95;
+    position: absolute;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transition: top 0ms ease-in-out 200ms, 
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.active {
+    opacity: 1;
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms, 
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms; 
+}
+
+.add-book-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+.add-book-form .close-btn:hover {
+    cursor: pointer;
+    color: #efecfa;
 }
 
 .add-book-form h3 {
