@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,8 @@
             <button class="login" id="login">Log In</button>
         </div>
         <div class="main-content">
-            <div class="add-book"> <button class="bk-btn">Add Book</button></div>
-            <form action="javascript:addBookToLibrary();" class="add-book-form">
+            <div class="add-book"> <button class="bk-btn" onclick="addBookForm()">Add Book</button></div>
+            <form class="add-book-form" id="add-book-form">
                 <div class="close-btn">&times;</div>
                 <h3>Add New Book</h3>
                 <div class="book-info">
@@ -35,24 +35,25 @@
                 </div>
 
                 <div class="have-read">
-                    <span>Have You Read It?</span>
-                    <input type="checkbox" class="checkbox" id="is-read">
+                    <label for="is-read"><span>Have You Read It?</span></label>
+                    <input type="radio" class="checkbox" id="is-read" name="isReadBtn" value="Read">
+                    <label for="isReadBtn">Yes</label>
+                    <input type="radio" class="checkbox" id="is-not-read" name="isReadBtn" value="Not Read">
+                    <label for="isReadBtn">No</label>
                 </div>
                 <div class="sub-button">
-                    <button class="submit-book" type="submit">Submit Book</button>
+                    <button type="button" class="submit-book" onclick="makeNewBook()">Submit Book</button>
                 </div>
 
             </form>
         <div class="book-grid" id="book-grid">
-            <div class="new-book">
+            <!-- <div class="new-book">
                 <p class="title">Title</p>
                 <p class="author">Author</p>
                 <p class="pages">20 Pages</p>
-                <div class="buttons">
-                    <button class="book-read">Read</button>
-                    <button class="remove-book">Remove Book</button>
-                </div>
-            </div>
+                <button class="book-read">Read</button>
+                <button class="remove-book">Remove Book</button>
+            </div> -->
 
             </div>
         </div>

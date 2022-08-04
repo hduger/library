@@ -163,6 +163,7 @@ body {
 }
 
 .submit-book:hover {
+    cursor: pointer;
     border: 2px;
     outline: auto;
     outline-style: inset;
@@ -175,6 +176,7 @@ body {
  /* End of styling popup form */
  .book-grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 200px;
     margin-right: 200px;
     gap: 20px;
@@ -217,6 +219,9 @@ body {
     color: #e2dcfa;
  }
  
+ .book-read{
+    margin-bottom: 5px;
+ }
 
 
 
